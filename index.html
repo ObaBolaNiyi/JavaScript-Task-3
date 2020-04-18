@@ -7,34 +7,33 @@
 
 <body>
     <script>
-        function wholenumber(number) {
-            let data = [];
-            for (let i = 1; i <= number; i++) {
-                if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0) {
-                    data.push("yu-gi-oh");
-                } else if (i % 2 === 0 && i % 3 === 0) {
-                    data.push("yu-gi");
-                } else if (i % 2 === 0 && i % 5 === 0) {
-                    data.push("yu-oh");
-                } else if (i % 3 === 0 && i % 5 === 0) {
-                    data.push("gi-oh");
-                } else if (i % 2 === 0) {
-                    data.push("yu");
-                } else if (i % 3 === 0) {
-                    data.push("gi");
-                } else if (i % 5 === 0) {
-                    data.push("oh");
+        function display(number) {
+            var wholenumber = [];
+            for (var i = 1; i <= number; i++) {
+                if ((i % 2) === 0 && (i % 3) === 0 && (i % 5) === 0) {
+                    wholenumber.push("yu-gi-oh");
+                } else if ((i % 2) === 0 && (i % 3) === 0) {
+                    wholenumber.push("yu-gi");
+                } else if ((i % 2) === 0 && (i % 5) === 0) {
+                    wholenumber.push("yu-oh");
+                } else if ((i % 3) === 0 && (i % 5) === 0) {
+                    wholenumber.push("gi-oh");
+                } else if ((i % 2) === 0) {
+                    wholenumber.push("yu");
+                } else if ((i % 3) === 0) {
+                    wholenumber.push("gi");
+                } else if ((i % 5) === 0) {
+                    wholenumber.push("oh");
                 } else {
-                    data.push(i);
+                    wholenumber.push(i);
                 }
 
             }
-            console.log(data);
-
-            return data;
+            console.log(wholenumber);
+            return wholenumber;
         }
-        wholenumber(100);
-        wholenumber(60);
+        display(100);
+        display(60);
     </script>
 </body>
 
